@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="./website.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Products</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Say, hi - landing@respo.com</a>
+                    </li>
+                </ul>
+                <div class="login-signup">
+                    <a href="">Login</a> or <a href="">Signup</a>
+                </div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="login-signup">
+                <a href="">Login</a> or <a href="">Signup</a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+      </header>
+      <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget feugiat urna. Fusce id nulla sed dolor tincidunt venenatis id in metus.</p>
+        <p>Nulla vel libero vitae lorem tincidunt luctus. Nullam et lectus non risus vulputate aliquet. Vivamus convallis vehicula est nec fringilla.</p>
+        <p>Quisque eu lectus quis eros gravida facilisis. Integer vel ex odio. Duis posuere varius eros, eget facilisis libero aliquet nec.</p>
+      </div>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          navigation.style.backgroundColor = '#333'; // Change to desired color
+          } 
+         else {
+          navigation.style.backgroundColor = 'transparent';
+         }
+        }   
+        );
+
+    </script>
+</body>
+</html>
